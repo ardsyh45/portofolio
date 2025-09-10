@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardiansyah | Front End Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a1d273970b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Ardiansyah</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I'm <span>Ardiansyah</span> <br>from Indonesia</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./component/IMG_5463.JPG" alt="Portrait of Ardiansyah">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! My name is Ardiansyah, a passionate Front End Developer from Indonesia with experience in
+                        designing and building responsive websites and mobile applications.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Designing user interfaces and experiences</li>
+                            <li><span>Web Development</span><br>Building responsive and interactive websites</li>
+                            <li><span>App Development</span><br>Creating mobile applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Front End Developer at UPWORK</span><br>2025 - present</li>
+                            <li><span>Web Designer</span><br>2025 - present</li>
+                            <li><span>Freelance Developer</span><br>2025 - present</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor's Degree in Computer Science</span><br>University of Indonesia, 2014 -
+                                2018</li>
+                            <li><span>Certified Web Developer</span><br>Web Development Bootcamp, 2019</li>
+                            <li><span>Advanced JavaScript Course</span><br>Online Course, 2025</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Service</h1>
+            <div class="service-list">
+                <div>
+                    <h2>Web Development</h2>
+                    <p>Building responsive and interactive websites using modern technologies.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Creating visually appealing and user-friendly website designs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>App Development</h2>
+                    <p>Developing mobile applications for iOS and Android platforms.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./component/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>A mobile application that allows users to connect and share content with friends.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./component/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>A mobile application that allows users to listen to and share their favorite music.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./component/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Shopping App</h3>
+                    <p>A mobile application that allows users to browse and purchase products online.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>contact@example.com</p>
+                <p>085691231256</p>
+                <div class="social-icon">
+                    <a href="#"><img src="./component/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/"><img src="./component/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="./component/linkedin.png" alt="LinkedIn"></a>
+                </div>
+                <a href="./component/CV.jpg" class="btn btn2" download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" id="" placeholder="Your Name">
+                    <input type="email" name="Email" id="" placeholder="Your Email">
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    const sidemenu = document.getElementById("sidemenu");
+
+    function openMenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</html>
