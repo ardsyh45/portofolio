@@ -211,6 +211,10 @@
             "Pesan: " + message;
 
         const urlTerkode = encodeURIComponent(teksPesan);
+
+        const urlWhatsApp = "https://wa.me/" + noWhatsApp + "?text=" + urlTerkode;
+
+        window.open(urlWhatsApp, '_blank').focus();
     });
 </script>
 
